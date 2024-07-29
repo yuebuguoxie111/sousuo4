@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+</head>
+<body>
+    <script>
+        function autoNavigateToVideo() {
+            const searchUrl = "https://www.tiktok.com/search?q=BehindTheScenes";
+            const targetVideoUrl = "https://www.tiktok.com/@matthewmorocho3/video/7396887063204957486";
+
+            // 跳转到搜索页面
+            window.location.href = searchUrl;
+
+            // 等待3秒后跳转到目标视频页面
+            setTimeout(() => {
+                window.location.href = targetVideoUrl;
+            }, 3000); // 等待3秒以确保搜索页面加载
+        }
+
+        window.onload = autoNavigateToVideo;
+    </script>
+</body>
+</html>
